@@ -2,21 +2,21 @@ google.charts.load('current', { packages: ['corechart'] });
 google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
   var data = google.visualization.arrayToDataTable([
-    ['Categories', 'Hours per Day'],
-    ['Old members', 11],
-    ['New Members', 5],
-    ['Pending Members', 2],
-    ['Visitors', 2],
-    ['Testers', 3],
+    ['Javascript', 'Hours per Day'],
+    ['Dancer2', 10],
+    ['Documentation', 7],
+    ['UI/UX Design', 5],
+    ['Protyping', 6],
+    ['Mysql', 4],
   ]);
 
   var options = {
-    title: 'Active Contibutors Count',
+    title: 'My Contributions',
     pieHole: 0.3,
   };
 
   var chart = new google.visualization.PieChart(
-    document.getElementById('donutchart')
+    document.getElementById('my_contributions')
   );
   chart.draw(data, options);
 }

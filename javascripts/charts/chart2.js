@@ -2,12 +2,12 @@ google.charts.load('current', { packages: ['corechart'] });
 google.charts.setOnLoadCallback(drawChart);
 function drawChart() {
   var data = google.visualization.arrayToDataTable([
-    ['Categories', 'Tasks taken'],
-    ['Old members', 11],
-    ['New Members', 10],
-    ['Pending Members', 4],
-    ['Visitors', 2],
-    ['Testers', 3],
+    ['Javascript', 'Hours per Day'],
+    ['Dancer2', 10],
+    ['Documentation', 7],
+    ['UI/UX Design', 5],
+    ['Protyping', 6],
+    ['Mysql', 4],
   ]);
 
   var options = {
@@ -16,7 +16,7 @@ function drawChart() {
   };
 
   var chart = new google.visualization.PieChart(
-    document.getElementById('donutchart1')
+    document.getElementById('general_contributions')
   );
   chart.draw(data, options);
 }
