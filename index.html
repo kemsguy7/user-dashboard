@@ -10,6 +10,12 @@
         integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
         crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
+
+    <!-- charts -->
+    <script
+      type="text/javascript"
+      src="https://www.gstatic.com/charts/loader.js"
+    ></script>
 </head>
 
 <body>
@@ -225,8 +231,6 @@
                                     </div>
                                 </div>
                             </div>
-                         
-                            
                         </div> <!--- End Row Dashboard Stats-->
 
 
@@ -234,7 +238,9 @@
                             <div class="col-12 col-md-6"> 
                                 <div class="card border-0"> 
                                     <div class="card-body py-4"> 
-
+                                        <div class="stats-chart">
+                                            <div id="donutchart"> </div>
+                                        </div>
                                     </div>
                                 </div> 
                             </div> <!--- End Col-6-->
@@ -242,7 +248,9 @@
                             <div class="col-12 col-md-6"> 
                                 <div class="card border-0"> 
                                     <div class="card-body py-4"> 
-
+                                        <div class="stats-chart">
+                                            <div id="donutchart1"> </div>
+                                        </div>
                                     </div>
                                 </div> 
                             </div> <!--- End Col-6-->
@@ -286,6 +294,7 @@
                     </div><!--End mb-3-->
                 </div>
             </main>
+
             <!-- Footer -->
             <footer class="footer mt-auto py-3">
                 <div class="container-fluid">
@@ -319,6 +328,11 @@
         crossorigin="anonymous"></script>
     <!-- Your custom script -->
     <script src="script.js"></script>
+    <script src="./javascripts/admin.js"></script>
+    <script src="./javascripts/charts/chart1.js"></script>
+    <script src="./javascripts/charts/chart2.js"></script>
+    <script src="./javascripts/charts/chart3.js"></script>
+    <script src="./javascripts/charts/chart4.js"></script>
 </body>
 
 </html>
