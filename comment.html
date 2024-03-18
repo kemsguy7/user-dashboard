@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nested Comments System</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <!-- Font Awesome for icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    .comment, .comment-form {
+      border: 1px solid #ddd;
+      border-radius: 20px;
+      padding: 15px;
+      margin-bottom: 20px;
+    }
+    .comment-header {
+      display: flex;
+      align-items: center;
+      margin-bottom: 10px;
+    }
+    .avatar {
+      width: 40px;
+      height: 40px;
+      border-radius: 50%;
+      margin-right: 10px;
+    }
+    .reply-btn {
+      border-radius: 15px;
+      padding: 5px 15px;
+      margin-top: 10px;
+    }
+    .replies {
+      margin-top: 15px;
+    }
+  </style>
+</head>
+<body>
+
+<div class="container mt-5">
+  <h1 class="mb-4">Comments</h1>
+
+  <div class="comments">
+    <!-- Root Comment -->
+    <div class="comment">
+      <div class="comment-header">
+        <img src="https://via.placeholder.com/50" alt="User Avatar" class="avatar">
+        <h5>User 1</h5>
+      </div>
+      <div class="comment-body">
+        <p>This is the root comment. Reply to this!</p>
+        <button class="btn btn-sm btn-primary reply-btn">Reply</button>
+      </div>
+      <!-- Nested Replies -->
+      <div class="replies ms-5">
+        <div class="comment">
+          <div class="comment-header">
+            <img src="https://via.placeholder.com/50" alt="User Avatar" class="avatar">
+            <h5>User 2</h5>
+          </div>
+          <div class="comment-body">
+            <p>This is a nested reply.</p>
+            <button class="btn btn-sm btn-primary reply-btn">Reply</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Comment Form -->
+  <div class="comment-form mt-5">
+    <h3>Add a Comment</h3>
+    <form id="commentForm">
+      <div class="mb-3">
+        <label for="comment-text" class="form-label">Comment</label>
+        <textarea class="form-control" id="comment-text" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+  </div>
+</div>
+
+<!-- Bootstrap JS -->
+<script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
+<!-- jQuery -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function() {
+    // Handle reply button click
+    $('.reply-btn').click(function() {
+      // Clone the comment form
+      var commentForm = $('.comment-form').clone();
+      // Remove any existing comment form
+      $('.comment-form').remove();
+      // Append the cloned comment form after the clicked reply button's parent comment
+      $(this).closest('.comment').append(commentForm);
+    });
+
+    // Handle comment form submission
+    $('#commentForm').submit(function(e) {
+      e.preventDefault();
+      var commentText = $('#comment-text').val();
+      if (commentText.trim() !== '') {
+        // Create a new comment element
+        var newComment = $('<div class="comment"><div class="comment-header"><img src="https://via.placeholder.com/50" alt="User Avatar" class="avatar"><h5>User</h5></div><div class="comment-body"><p>' + commentText + '</p><button class="btn btn-sm btn-primary reply-btn">Reply</button></div></div>');
+        // Append the new comment to the comments section
+        $('.comments').append(newComment);
+        // Clear the textarea
+        $('#comment-text').val('');
+      } else {
+        alert('Please enter a comment.');
+      }
+    });
+  });
+</script>
+</body>
+</html>
