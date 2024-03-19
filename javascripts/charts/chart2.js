@@ -11,7 +11,7 @@ function drawChart() {
   ]);
 
   var options = {
-    title: 'Challenge Participation',
+     title: 'General Contributions',
     pieHole: 0.3,
   };
 
