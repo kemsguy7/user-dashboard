@@ -105,7 +105,7 @@
         <!-- Main content -->
         <div class="main">
             <!-- Header with search bar -->
-            <nav class="navbar navbar-expand-lg navbar-light bg-light px-4 py-3">
+            <!-- <nav class="navbar navbar-expand-lg navbar-light bg-light px-4 py-3">
                 <div class="container-fluid">
                     <button class="btn btn-primary d-block d-lg-none me-auto" type="button" data-bs-toggle="offcanvas"
                         data-bs-target="#sidebar" aria-controls="sidebar">
@@ -137,7 +137,37 @@
                         </ul>
                     </div>
                 </div>
-            </nav> <!--End Header Navbar-->
+            </nav>  -->
+            <!--End Header Navbar-->
+
+            <header>
+                <a href="#">
+                  <img src="./misc/theweeklychallenge-logo 1.svg" alt="" />
+                </a>
+                <a href="index.html" class="head-link"> The Weekly Challenge</a>
+                <div class="search">
+                  <input type="text" id="search" placeholder="search here" />
+                  <label for="search"> <i class="fas fa-search"></i></label>
+                </div>
+                <div class="user">
+                  <img src="./misc/person.jpg" alt="" class="user-pic" />
+                  <div class="sub-menu-wrap">
+                    <div class="sub-menu">
+                      <a href="#" class="sub-menu-link"
+                        ><i class="fa-regular fa-user"></i>NAME</a
+                      >
+                      <a href="#" class="sub-menu-link"
+                        ><i class="fa-regular fa-bell"></i>NOTIFICATIONS</a
+                      >
+                      <a href="#" class="sub-menu-link"
+                        ><i class="fa-regular fa-gears"></i>SETTINGS</a
+                      >
+                    </div>
+                  </div>
+                </div>
+              </header>
+
+
 
             <!-- Main content area -->
             <main class="content px-3 py-4">
@@ -258,9 +288,11 @@
                         </div><!--- End Row Charts-->
                         
                         <!-- Beginning of contributions table -->
-                        <h3 class="fw-bold fs-4 my-3">Contributions </h3>
+                        
                         <div class="row">
-                            <div class="col-12">
+                            
+                            <div class="col-md-6 col-sm-12">
+                                <h3 class="fw-bold fs-4 my-3">Contributions </h3>
                                 <table class="table table-striped">
                                     <thead>
                                         <tr class="highlight">
@@ -306,6 +338,53 @@
                                     </tbody>
                                 </table>
                             </div>
+                            
+                            <div class="col-md-6 col-sm-12">
+                                <h3 class="fw-bold fs-4 my-3"> Recent Notifications</h3>
+                                <hr>
+                                <div class="notifications-content">
+                                    <div class="dropdown-divider"> </div>
+                                    
+                                    <div class="notification-image ">  
+                                        <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                            <img src="/account.png" class="avatar img-fluid" alt="">
+                                        </a>
+                                    </div> <!-- End of Div image -->
+                                    <div class="notification-text ps-4">
+                                        User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now 
+                                    </div>
+                                    
+                                </div><hr> <!--End notification content-->
+
+                                <div class="notifications-content">
+                                    <div class="dropdown-divider"> </div>
+                                    
+                                    <div class="notification-image ">  
+                                        <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                            <img src="/account.png" class="avatar img-fluid" alt="">
+                                        </a>
+                                    </div> <!-- End of Div image -->
+                                    <div class="notification-text ps-4">
+                                        User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now 
+                                    </div>
+                                    
+                                </div><hr> <!--End notification content-->
+
+                                <div class="notifications-content">
+                                    <div class="dropdown-divider"> </div>
+                                    
+                                    <div class="notification-image ">  
+                                        <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                            <img src="/account.png" class="avatar img-fluid" alt="">
+                                        </a>
+                                    </div> <!-- End of Div image -->
+                                    <div class="notification-text ps-4">
+                                        User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now 
+                                    </div>
+                                    
+                                </div><hr> <!--End notification content-->
+
+                            </div><!--End of col-md-6-->
                         </div>
                     </div><!--End mb-3-->
                 </div>
