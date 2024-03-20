@@ -39,47 +39,15 @@
                 </li>
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
+                        <i class="fas fa-comment"></i>
+                        <span>Comments</span>
+                    </a>
+                </li>
+                <li class="sidebar-item">
+                    <a href="#" class="sidebar-link">
                         <i class="fas fa-clipboard-list"></i>
-                        <span>Task</span>
+                        <span>Replies</span>
                     </a>
-                </li>
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#auth" aria-expanded="false" aria-controls="auth">
-                        <i class="fas fa-shield-alt"></i>
-                        <span>Auth</span>
-                    </a>
-                    <ul id="auth" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Login</a>
-                        </li>
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link">Register</a>
-                        </li>
-                    </ul>
-                </li>
-                <li class="sidebar-item">
-                    <a href="#" class="sidebar-link collapsed has-dropdown" data-bs-toggle="collapse"
-                        data-bs-target="#multi" aria-expanded="false" aria-controls="multi">
-                        <i class="fas fa-th-large"></i>
-                        <span>Multi Level</span>
-                    </a>
-                    <ul id="multi" class="sidebar-dropdown list-unstyled collapse" data-bs-parent="#sidebar">
-                        <li class="sidebar-item">
-                            <a href="#" class="sidebar-link collapsed" data-bs-toggle="collapse"
-                                data-bs-target="#multi-two" aria-expanded="false" aria-controls="multi-two">
-                                Two Links
-                            </a>
-                            <ul id="multi-two" class="sidebar-dropdown list-unstyled collapse">
-                                <li class="sidebar-item">
-                                    <a href="#" class="sidebar-link">Link 1</a>
-                                </li>
-                                <li class="sidebar-item">
-                                    <a href="#" class="sidebar-link">Link 2</a>
-                                </li>
-                            </ul>
-                        </li>
-                    </ul>
                 </li>
                 <li class="sidebar-item">
                     <a href="#" class="sidebar-link">
@@ -174,14 +142,14 @@
                     <div class="mb-4">
                         <h3 class="fw-bold fs-4 mb-3 mt-5">User Dashboard</h3>
                         <div class="row mb-5">
-                            <div class="col-12 col-md-3 mb-4">
-                                <div class="card border-0">
+                            <div class="col-12 col-md-3 mb-4 ">
+                                <div class="card border-0 analytics-card">
                                     <div class="card-body py-4 text-center">
                                         <p class="mb-2 fw-bold">
-                                            <i class="fa-solid fa-message"></i>
+                                            <i class="fa-solid fa-message "></i>
                                         </p>
                                         <h5 class="mb-2 fw-bold">
-                                            Comments
+                                           Total Comments
                                         </h5>
                                         <div class="mb-0">  
                                             <span class=" fw-bold">
@@ -192,13 +160,13 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-3 mb-3">
-                                <div class="card border-0">
+                                <div class="card border-0 analytics-card">
                                     <div class="card-body py-4 text-center">
                                         <p class="mb-2 fw-bold">
                                             <i class="fa-solid fa-reply"></i>
                                         </p>
                                         <h5 class="mb-2 fw-bold">
-                                            Replies 
+                                          Total  Replies 
                                         </h5>
                                         <div class="mb-0">  
                                             <span class=" fw-bold">
@@ -209,7 +177,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-3 mb-3">
-                                <div class="card border-0">
+                                <div class="card border-0 analytics-card">
                                     <div class="card-body py-4 text-center">
                                         <p class="mb-2 fw-bold">
                                             <i class="fas fa-bell"></i>
@@ -226,7 +194,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-3 mb-3">
-                                <div class="card border-0">
+                                <div class="card border-0 analytics-card">
                                     <div class="card-body py-4 text-center">
                                         <p class="mb-2 fw-bold">
                                             <i class="fa-solid fa-business-time"></i>
@@ -243,7 +211,7 @@
                                 </div>
                             </div>
                             <div class="col-12 col-md-3 mb-3">
-                                <div class="card border-0">
+                                <div class="card border-0 analytics-card">
                                     <div class="card-body py-4 text-center">
                                         <p class="mb-2 fw-bold">
                                             <i class="fa-solid fa-trophy"></i>
@@ -263,7 +231,7 @@
 
 
                         <div class="row">
-                            <div class="col-12 col-md-6 mb-3"> 
+                            <div class="col-12 col-xs-12 col-md-6 mb-3"> 
                                 <div class="card border-0"> 
                                     <div class="card-body py-4"> 
                                         <div class="stats-chart">
@@ -274,7 +242,7 @@
                                 </div> 
                             </div> <!--- End Col-6-->
 
-                            <div class="col-12 col-md-6 mb-3"> 
+                            <div class="col-12 col-xs-12  col-md-6 mb-3"> 
                                 <div class="card border-0"> 
                                     <div class="card-body py-4"> 
                                         <div class="stats-chart">
@@ -294,125 +262,126 @@
                                 <div class="card">
                                     <div class="card-body"> 
                                         <h3 class="fw-bold fs-4 my-3">Contributions </h3>
-                                <table class="table table-striped">
-                                    <thead>
-                                        <tr class="highlight">
-                                            <th scope="col">#</th>
-                                            <th scope="col">UserName</th>
-                                            <th scope="col">Contribution Id</th>
-                                            <th scope="col">Actions</th>
-                                                       
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td> Priya </td>
-                                            <td>#22322525</td>
-                                            <td>
-                                                <i class="fas fa-eye"></i> &nbsp;&nbsp;
-                                                <i class="fas fa-comment"></i> 
-                                              </td>
-                                              
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td> Priya </td>
-                                            <td>#22322525</td>
-                                            <td>
-                                                <i class="fas fa-eye"></i> &nbsp;&nbsp;
-                                                <i class="fas fa-comment"></i> 
-                                              </td>
-                                              
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td> Priya </td>
-                                            <td>#22322525</td>
-                                            <td>
-                                                <i class="fas fa-eye"></i> &nbsp;&nbsp;
-                                                <i class="fas fa-comment"></i> 
-                                              </td>
-                                              
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td> Priya </td>
-                                            <td>#22322525</td>
-                                            <td>
-                                                <i class="fas fa-eye"></i> &nbsp;&nbsp;
-                                                <i class="fas fa-comment"></i> 
-                                              </td>
-                                              
-                                        </tr>
-                                        <tr>
-                                            <th scope="row">1</th>
-                                            <td> Priya </td>
-                                            <td>#22322525</td>
-                                            <td>
-                                                <i class="fas fa-eye"></i> &nbsp;&nbsp;
-                                                <i class="fas fa-comment"></i> 
-                                              </td>
-                                              
-                                        </tr>
-                                    </tbody>
-                                </table>
-                                    </div>
-                                </div>
+                                        <table class="table table-striped">
+                                            <thead>
+                                                <tr class="highlight">
+                                                    <th scope="col">#</th>
+                                                    <th scope="col">UserName</th>
+                                                    <th scope="col">Contribution Id</th>
+                                                    <th scope="col">Actions</th>
+                                                            
+                                                </tr>
+                                            </thead>
+                                            <tbody>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td> Priya </td>
+                                                    <td>#22322525</td>
+                                                    <td>
+                                                        <i class="fas fa-eye"></i> &nbsp;&nbsp;
+                                                        <i class="fas fa-comment"></i> 
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td> Priya </td>
+                                                    <td>#22322525</td>
+                                                    <td>
+                                                        <i class="fas fa-eye"></i> &nbsp;&nbsp;
+                                                        <i class="fas fa-comment"></i> 
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td> Priya </td>
+                                                    <td>#22322525</td>
+                                                    <td>
+                                                        <i class="fas fa-eye"></i> &nbsp;&nbsp;
+                                                        <i class="fas fa-comment"></i> 
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td> Priya </td>
+                                                    <td>#22322525</td>
+                                                    <td>
+                                                        <i class="fas fa-eye"></i> &nbsp;&nbsp;
+                                                        <i class="fas fa-comment"></i> 
+                                                    </td>
+                                                    
+                                                </tr>
+                                                <tr>
+                                                    <th scope="row">1</th>
+                                                    <td> Priya </td>
+                                                    <td>#22322525</td>
+                                                    <td>
+                                                        <i class="fas fa-eye"></i> &nbsp;&nbsp;
+                                                        <i class="fas fa-comment"></i> 
+                                                    </td>
+                                                    
+                                                </tr>
+                                            </tbody>
+                                        </table>
+                                        <div class="text-center fs-2"> 
+                                            View All <span> <i class="fa-solid fa-arrow-right"></i> </span>
+                                        </div>
+                                    </div><!--End card body-->
+                                </div><!--End Card-->
                                 
-                            </div>
+                            </div><!--End colmd-6- col-sm-12 -->
                             
                             <div class="col-md-6 col-sm-12 mt-4">
                                 <div class="card">
                                     <div class="card-body">
                                         <h3 class="fw-bold fs-4 my-3"> Recent Notifications</h3>
-                                <hr>
-                                <div class="notifications-content">
-                                    <div class="dropdown-divider"> </div>
-                                    
-                                    <div class="notification-image ">  
-                                        <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
-                                            <img src="/account.png" class="avatar img-fluid" alt="">
-                                        </a>
-                                    </div> <!-- End of Div image -->
-                                    <div class="notification-text ps-4">
-                                        User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now 
-                                    </div>
-                                    
-                                </div><hr> <!--End notification content-->
+                                                
+                                        <hr>
+                                        <div class="notifications-content">          
+                                            <div class="notification-image ">  
+                                                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                                    <img src="/account.png" class="avatar img-fluid" alt="">
+                                                </a>
+                                            </div> <!-- End of Div image -->
+                                            <div class="notification-text ps-4">
+                                                User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now 
+                                            </div>       
+                                        </div><hr> <!--End notification content-->
 
-                                <div class="notifications-content">
-                                    <div class="dropdown-divider"> </div>
-                                    
-                                    <div class="notification-image ">  
-                                        <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
-                                            <img src="/account.png" class="avatar img-fluid" alt="">
-                                        </a>
-                                    </div> <!-- End of Div image -->
-                                    <div class="notification-text ps-4">
-                                        User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now 
-                                    </div>
-                                    
-                                </div><hr> <!--End notification content-->
+                                        <div class="notifications-content">
+                                            
+                                            <div class="notification-image ">  
+                                                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                                    <img src="/account.png" class="avatar img-fluid" alt="">
+                                                </a>
+                                            </div> <!-- End of Div image -->
+                                            <div class="notification-text ps-4">
+                                                User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now 
+                                            </div>
+                                            
+                                        </div><hr> <!--End notification content-->
 
-                                <div class="notifications-content">
-                                    <div class="dropdown-divider"> </div>
-                                    
-                                    <div class="notification-image ">  
-                                        <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
-                                            <img src="/account.png" class="avatar img-fluid" alt="">
-                                        </a>
-                                    </div> <!-- End of Div image -->
-                                    <div class="notification-text ps-4">
-                                        User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now 
-                                    </div>
-                                    
-                                </div><hr> <!--End notification content-->
-                                    </div>
-                                </div>
-                                
+                                        <div class="notifications-content">                                                                   
+                                            <div class="notification-image ">  
+                                                <a href="#" data-bs-toggle="dropdown" class="nav-icon pe-md-0">
+                                                    <img src="/account.png" class="avatar img-fluid" alt="">
+                                                </a>
+                                            </div> <!-- End of Div image -->
+                                            <div class="notification-text ps-4">
+                                                User1 has commented on your contribution <br> <span class="notification-time"> </span> Just now 
+                                            </div>
+                                            
+                                        </div><hr> <!--End notification content-->
+                            
+                                        <div class="text-center fs-2"> 
+                                            View All <span> <i class="fa-solid fa-arrow-right"></i> </span>
+                                        </div>
+                                    </div> <!--End Div card Body-->
+                                </div><!--End Card-->
                             </div><!--End of col-md-6-->
-                        </div>
+                        </div> <!--End Row-->
                     </div><!--End mb-3-->
                 </div>
             </main>
